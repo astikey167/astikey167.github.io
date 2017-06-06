@@ -1,93 +1,599 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html>
 <head>
-<link rel="icon" type="image/type" href="home.png">
-<title>
-	Astikey Singh
-</title>
-<link rel="stylesheet" type="text/css" href="external.css" />
-<style type="text/css">
-     
-    #HOME{background-color: rgb(255,255,255);
-
-    }
-
-.hi{background-color: rgb(255,255,255);
-	border-width:.4vw;  
-	border-color: rgb(0,0,0);
-    border-style:solid;
-	font-size: 2.2vw;
-	font-style: bold;
-position: absolute;
-padding: auto;
-top: 16vw;
-left: 10%;
-width: 32vw;
-height: 3.7vw;
-
-}
-#ug{background-image:url('bg.jpg');
-    	background-repeat:no-repeat;
-    	background-size: cover;
-	border-width:1.2vw;  
-	border-color: rgb(0,0,0);
-    border-style:double;
-	font-size: 2vw;
-	padding-left: 1%;
-	padding-top: 1.5%;
-	padding-bottom: 10%;
-	position: absolute;
-	width: 70vw;
-	height: 8vw;
-	top: 18vw;
-	left:12%;
-
-}
-img{
-	border-width:.6vw;  
-	border-color: rgb(255,0,0);
-    border-style:inset;
-	position: absolute;
-	top: 5.5%;
-	left: 90%;
-	height: auto;
-    width: auto\9;
-	
-}
-.pro{	
-	font-size: 2.5vw;
-	font-style: bold;
-	position: absolute;
-	top: 45vw;
-	left:25%;
+<link rel="icon" type="image/type" href="kgp.png">
+	<title>Spring Fest</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style type="text/css">
+body
+{
+	margin:0;
+	padding:0;
+	background-color: rgb(255,255,255);
+	font-family: Helvetica;
 }
 
-div.as p{
-	margin: 5%;
-  font-weight: bold;
-  color: #000000;
+a
+{
+	text-decoration: none;
+}
+#clear
+{
+	clear: both;
+}
+header
+{
+
+    background-color: #3b5998;
+    background: #4e69a2;
+	background: -moz-linear-gradient(top, #4e69a2 0%, #3b5998 50%);
+	background: -webkit-linear-gradient(top, #4e69a2 0%,#3b5998 50%);
+	background: linear-gradient(to bottom, #4e69a2 0%,#3b5998 50%);
+    border-bottom: 1px solid #133783;
+    min-height: 42px;
+    min-width: 980px;
+}
+header div.topcontainer
+{
+	height: 82px;
+
+}
+header div.topcontainer .topbox
+{
+	margin: 0 auto;
+    padding-top: 13px;
+    width: 980px;
+}
+header div.topcontainer .topbox .image
+{
+	float:left;
+	margin-top: 5px;
+	width: 220px;
+    height:50px;
+    background:url("capture.png");
+    background-position: 0 0;
+}
+header div.topcontainer .topbox form.login
+{
+	float:right;
+	margin: 0;
+	padding: 0;
+}
+/*table,tr,td
+{
+	border: 1px solid black;
+}*/
+.label
+{
+	font-size: 12px;
+}
+table
+{
+	border-spacing: 2px;
+	border-collapse: separate;
+	vertical-align: middle;
+}
+td
+{
+	padding: 0 0 0 14px;
+	text-align: left;
+	color: #fff;
+    font-weight: normal;
+    padding-left: 1px;
+}
+header div.topcontainer .topbox table
+{
+	border-spacing: 2px;
+	border-collapse: separate;
+	vertical-align: middle;
+}
+header div.topcontainer .topbox table tr 
+{
+    vertical-align: top;
+}
+header div.topcontainer .topbox td
+{
+	padding: 0 10px 0 0;
+	text-align: left;
+	color: #fff;
+    font-weight: normal;
+    padding-left: 1px;
+}
+header div.topcontainer .topbox .inputtext
+{
+    margin: 0;
+    width: 142px;
+    padding-bottom: 4px;
+    border: 1px solid;
+        border-color: #1d2a5b;
+}
+header div.topcontainer .topbox .inputpassword
+{
+    margin: 0;
+    width: 142px;
+    padding-bottom: 4px;
+    border: 1px solid;
+        border-color: #1d2a5b;	
+}
+header div.topcontainer .topbox .signin
+{
+	border-radius: 2px;
+	border: 1px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 12px;
+    -webkit-font-smoothing: antialiased;
+    font-weight: bold;
+    line-height: 19px;
+    padding: 2px 6px;
+    color: #fff;
+    background-color: #4267b2;
+    border-color: #29487d;
+}
+header div.topcontainer .topbox td a
+{
+	color: #9cb4d8;
+	font-size: 12px;
+	font-weight: normal;
+	letter-spacing: normal;
+	line-height: 16px;
+	text-decoration: none;
+}
+#section
+{
+	position: relative;
+	min-width: 980px;
+    background: #ffffff;
+	background: -moz-linear-gradient(top, #ffffff 0%, #d3d8e8 100%);
+	background: -webkit-linear-gradient(top, #ffffff 0%,#d3d8e8 100%);
+	background: linear-gradient(to bottom, #ffffff 0%,#d3d8e8 100%);
+	margin:0 auto;
+	height: 600px;
+}
+#wrap
+{
+
+	width:980px;
+}
+#section .bodycontainer
+{
+	margin: 0 auto;
+    width: 980px;
+    outline: none;
+    padding: 0;
+}
+#section .bodycontainer .left
+{
+	float: left;
+	height: 600px;
+	overflow: hidden;
+}
+#section .bodycontainer .left .picbox
+{
+	margin-right: 15px;
+    width: 565px;
+}
+#section .bodycontainer .left .picbox .leftline
+{
+	color: #0e385f;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 29px;
+    margin-top: 40px;
+    width: 450px;
+    word-spacing: -1px;
+}
+#section .bodycontainer .left .picbox
+{	
+	width: 537px;
+    height: 195px;
+}
+#section .bodycontainer .right
+{
+	float: right;
+	max-width: 400px;
+	width:400px;
+	height: 600px;
+	overflow: hidden;
+}
+#section .bodycontainer .right .righttext
+{
+	padding-top: 20px;
+    padding-bottom: 20px;
+}
+#section .bodycontainer .right .righttext .righttop
+{
+	font-size: 36px;
+	color: #333;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+#section .bodycontainer .right .righttext .rightsec
+{
+	color: #1d2129;
+    font-size: 19px;
+}
+#section .bodycontainer .right .signup
+{
+	margin: 0 auto 0 auto;
+    padding-bottom: 7px;
+}
+.prop
+{
+	font-size: 18px;
+    padding: 8px 10px;
+   	border: 1px solid #bdc7d8;
+    border-radius: 5px;
+    margin: 0;
+    width: 377px;
+}
+#section .bodycontainer .right .signup .firstname
+{
+	width:43.5%;
+}
+#section .bodycontainer .right .signup .surname
+{
+	width:43.5%;
+
+}
+#section .bodycontainer .right .signup .birthbox .birthtext
+{
+	color: #1d2129;
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+#section .bodycontainer .right .signup .birthbox span
+{
+	display: inline-block;
+
+}
+#section .bodycontainer .right .signup .birthbox select
+{
+	border: 1px solid #bdc7d8;
+    padding: 2px;
+    font-size: 13px;
+    height: 30px;
+    padding: 5px;
+}
+#section .bodycontainer .right .signup .birthbox .why
+{
+	font-size: 11px;
+    max-width: 150px;
+    display: inline-block;
+    max-width: 140px;
+    vertical-align: middle;
+	margin-left: 10px;
+	color: #365899;
+    cursor: pointer;
+    text-decoration: none;
+}
+#section .bodycontainer .right .signup .gender
+{
+	margin: 20px 0 10px 0;
+}
+#section .bodycontainer .right .signup .gender span
+{
+	color: #1d2129;
+    font-size: 18px;
+    font-weight: normal;
+    line-height: 18px;
+    padding: 0 10px 0 3px;
+
+}
+#section .bodycontainer .right .signup .terms
+{
+	width:399px;
+}
+#section .bodycontainer .right .signup .terms p
+{
+	font-size: 11px;
+	padding: 1em 0;
+	color:#777;
+}
+#section .bodycontainer .right .signup .submit
+{
+	font-size: 19px;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	min-width: 194px;
+    padding: 7px 16px;
+    text-align: center;
+    box-shadow: inset 0 1px 1px #a4e388;
+    border: 1px solid;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    letter-spacing: 0.5px;
+    position: relative;
+    text-shadow: 0 1px 2px rgba(0,0,0,.5);
+    background: linear-gradient(#67ae55, #578843);
+    border-color: #3b6e22 #3b6e22 #2c5115;
+}
+#section .bodycontainer .right .page
+{
+	color: #666;
+    font-size: 13px;
+    font-weight: bold;
+    margin-top: 10px;
+    padding-top: 15px;
+}
+
+footer
+{
+	color: #737373;
+    margin: 0 auto;
+    width: 980px;
+    font-size: 12px;
+}
+footer ul
+{
+	color: #737373;
+	padding-left:0;
+}
+footer ul>li
+{
+	list-style: none;
+	display: inline-block;
+	padding-left: 10px;
+}
+footer a
+{
+	text-decoration: none;
+}
+hr
+{
+	color:#dddfe2;
+}
+footer table tr td
+{
+	padding-top: 8px;
+	padding-right:15px;
+	padding-left: 0px;
+	font-size:13px;
+}
+footer p
+{
+	size:11px;
 }
 
 </style>
 </head>
 <body>
-<table cellpadding="10" width="100%">
-<tr>
-<td id="HOME"><h2>HOME</h2></a></td>
-<td><a href="port2.html"><h2>About Me</h2></a></td>
-<td><a href="port3.html"><h2>Interests</h2></a></td>
-<td><a href="port4.html"><h2>Contacts</h2></a></td>
-</tr></table>
-
-<div id="ug">
-<p>
-Currently I am 1st year undergraduate student at IIT KHARAGPUR<br> of electrical engineering department. Born in Gorakhpur, but brought<br> up in Kanpur.<br>
-You can explore me more by clicking on the links above.<br><br><br><strong>"It does not do to dwell on dreams and to forget to live"</strong></p>
-<img src="astikey.jpg" 
- width="20%" height="20%"></div>
-</div>
-<div class="hi">Hello peeps! I'm ASTIKEY SINGH</div>
+	<header>
+		<div class="topcontainer">
+			<div class="topbox">
+				<div class="image"></div>
+				<form class="login">
+					<table>
+						<tr class="label">
+							<td>Email or Phone</td>
+							<td>Password</td>
+						</tr>
+						<tr>
+							<td><input type="email" name="email" class="inputtext"></td>
+							<td><input type="password" name="password" class="inputpassword"></td>
+							<td><input type="submit" value="Log In" class="signin"></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td><a href="#">Forgotten account?</a></td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</div>
+	</header>
+	<div id="clear"></div>
+	<div id="section">
+		<div class="bodycontainer">
+			<div class="left">
+				<div class="picbox">
+					<div class="leftline">Spring fest helps you connect and share with the people in your life.</div>
+					<div class="leftimage"><img src="fbcopy.png" class="image"></div>
+				</div>
+			</div>
+			<div class="right">
+				<div class="righttext">
+					<span class="righttop">Create an account</span><br>
+					<span class="rightsec">It's free and always will be.</span>
+				</div>
+				<form class="signup">
+					<input type="text" class="firstname prop" placeholder="First Name">
+					<input type="text" class="surname prop" placeholder="Surname"><br><br>
+					<input type="text" class="email prop" placeholder="Mobile number or email address"><br><br>
+					<input type="password" class="password prop" placeholder="New password"><br><br>
+					<div class="birthbox">
+						<div class="birthtext">Birthday</div>
+						<span>
+							<select name="birthday" title="Day" class="day">
+								<option value="0" selected="1">Day</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+								<option value="5">5</option>
+								<option value="6">6</option>
+								<option value="7">7</option>
+								<option value="8">8</option>
+								<option value="9">9</option>
+								<option value="10">10</option>
+								<option value="11">11</option>
+								<option value="12">12</option>
+								<option value="13">13</option>
+								<option value="14">14</option>
+								<option value="15">15</option>
+								<option value="16">16</option>
+								<option value="17">17</option>
+								<option value="18">18</option>
+								<option value="19">19</option>
+								<option value="20">20</option>
+								<option value="21">21</option>
+								<option value="22">22</option>
+								<option value="23">23</option>
+								<option value="24">24</option>
+								<option value="25">25</option>
+								<option value="26">26</option>
+								<option value="27">27</option>
+								<option value="28">28</option>
+								<option value="29">29</option>
+								<option value="30">30</option>
+								<option value="31">31</option>
+							</select>
+							<select name="birthmonth" title="Month" class="month">
+								<option value="0" selected="1">Month</option>
+								<option value="1">Jan</option>
+								<option value="2">Feb</option>
+								<option value="3">Mar</option>
+								<option value="4">Apr</option>
+								<option value="5">May</option>
+								<option value="6">Jun</option>
+								<option value="7">Jul</option>
+								<option value="8">Aug</option>
+								<option value="9">Sept</option>
+								<option value="10">Oct</option>
+								<option value="11">Nov</option>
+								<option value="12">Dec</option>
+							</select>
+							<select name="birthyear" title="Year" class="year">
+								<option value="0" selected="1">Year</option>
+								<option value="2017">2017</option>
+								<option value="2016">2016</option>
+								<option value="2015">2015</option>
+								<option value="2014">2014</option>
+								<option value="2013">2013</option>
+								<option value="2012">2012</option>
+								<option value="2011">2011</option>
+								<option value="2010">2010</option>
+								<option value="2009">2009</option>
+								<option value="2008">2008</option>
+								<option value="2007">2007</option>
+								<option value="2006">2006</option>
+								<option value="2005">2005</option>
+								<option value="2004">2004</option>
+								<option value="2003">2003</option>
+								<option value="2002">2002</option>
+								<option value="2001">2001</option>
+								<option value="2000">2000</option>
+								<option value="1999">1999</option>
+								<option value="1998">1998</option>
+								<option value="1997">1997</option>
+								<option value="1996">1996</option>
+								<option value="1995">1995</option>
+								<option value="1994">1994</option>
+								<option value="1993">1993</option>
+								<option value="1992">1992</option>
+								<option value="1991">1991</option>
+								<option value="1990">1990</option>
+								<option value="1989">1989</option>
+								<option value="1988">1988</option>
+								<option value="1987">1987</option>
+								<option value="1986">1986</option>
+								<option value="1985">1985</option>
+								<option value="1984">1984</option>
+								<option value="1983">1983</option>
+								<option value="1982">1982</option>
+								<option value="1981">1981</option>
+								<option value="1980">1980</option>
+								<option value="1979">1979</option>
+								<option value="1978">1978</option>
+								<option value="1977">1977</option>
+								<option value="1976">1976</option>
+								<option value="1975">1975</option>
+								<option value="1974">1974</option>
+								<option value="1973">1973</option>
+								<option value="1972">1972</option>
+								<option value="1971">1971</option>
+								<option value="1970">1970</option>
+								<option value="1969">1969</option>
+								<option value="1968">1968</option>
+								<option value="1967">1967</option>
+								<option value="1966">1966</option>
+								<option value="1965">1965</option>
+								<option value="1964">1964</option>
+								<option value="1963">1963</option>
+								<option value="1962">1962</option>
+								<option value="1961">1961</option>
+								<option value="1960">1960</option>
+								<option value="1959">1959</option>
+								<option value="1958">1958</option>
+								<option value="1957">1957</option>
+								<option value="1956">1956</option>
+								<option value="1955">1955</option>
+								<option value="1954">1954</option>
+								<option value="1953">1953</option>
+								<option value="1952">1952</option>
+								<option value="1951">1951</option>
+								<option value="1950">1950</option>
+							</select>
+						</span>
+						<a href="#" class="why">Why do I need to provide my date of birth?</a>
+					</div>
+					<div class="gender">
+						<input type="radio" name="gender" value="1" class="female"><span>Female</span>
+						<input type="radio" name="gender" value="2" class="male"><span>Male</span>
+					</div>
+					<div class="terms">
+						<p>By clicking Create an account, you agree to our <a href="#">Terms</a> and confirm that you have read our <a href="#">Data Policy</a>, including our <a href="#">Cookie Use Policy</a>. You may receive SMS message notifications from Facebook and can opt out at any time.</p>
+					</div>
+					<button type="submit" name="submit" class="submit">Create an account</button>
+				</form>
+				<div class="page">
+					Create a Page for a celebrity, band or business.
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="clear"></div>
+	<footer>
+		<ul>
+			<li>English(UK)</li>
+			<li><a href="#">हिन्दी</a></li>
+			<li><a href="#">मराठी</a></li>
+			<li><a href="#">اردو</a></li>
+			<li><a href="#">ਪੰਜਾਬੀ</a></li>
+			<li><a href="#">বাংলা</a></li>
+			<li><a href="#">ગુજરાતી</a></li>
+			<li><a href="#">தமிழ்</a></li>
+			<li><a href="#">తెలుగు</a></li>
+		</ul>
+		<hr>
+		<table>
+			<tr>
+				<td><a href="#">Sign Up</a></td>
+				<td><a href="#">Log In</a></td>
+				<td><a href="#">Messenger</a></td>
+				<td><a href="#">Facebook Lite</a></td>
+				<td><a href="#">Mobile</a></td>
+				<td><a href="#">Find Friends</a></td>
+				<td><a href="#">People</a></td>
+				<td><a href="#">Pages</a></td>
+				<td><a href="#">Places</a></td>
+				<td><a href="#">Games</a></td>
+				<td><a href="#">Location</a></td>
+			</tr>
+			<tr>
+				<td><a href="#">Celebrities</a></td>
+				<td><a href="#">Marketplace</a></td>
+				<td><a href="#">Groups</a></td>
+				<td><a href="#">Recipies</a></td>
+				<td><a href="#">Moments</a></td>
+				<td><a href="#">Instagram</a></td>
+				<td><a href="#">About</a></td>
+				<td><a href="#">Create Advert</a></td>
+				<td><a href="#">Create Page</a></td>
+				<td><a href="#">Developers</a></td>
+				<td><a href="#">Careers</a></td>
+			</tr>
+			<tr></tr>
+		</table>
+		<br>
+		<p>Copyright SF2017</p>
+	</footer>
 </body>
 </html>
-
